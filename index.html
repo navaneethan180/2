@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Music UI</title>
+
+<style>
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#f3f4f6;
+    font-family:Arial, sans-serif;
+}
+
+.player{
+    width:260px;
+    background:#ffffff;
+    border-radius:12px;
+    padding:20px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+}
+
+.album{
+    width:120px;
+    height:120px;
+    margin:auto;
+    border-radius:50%;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'><rect width='200' height='200' fill='%2322c55e'/><circle cx='100' cy='100' r='60' fill='black'/><circle cx='100' cy='100' r='8' fill='white'/></svg>");
+    background-size:cover;
+    background-position:center;
+}
+
+.title{
+    margin-top:12px;
+    font-weight:bold;
+}
+
+.singer{
+    font-size:13px;
+    color:#6b7280;
+}
+
+.bar{
+    height:4px;
+    background:#e5e7eb;
+    margin:15px 0;
+    border-radius:4px;
+}
+
+.bar span{
+    display:block;
+    width:50%;
+    height:100%;
+    background:#22c55e;
+    border-radius:4px;
+}
+
+.buttons{
+    display:flex;
+    justify-content:space-between;
+    margin-top:15px;
+}
+
+.btn{
+    width:40px;
+    height:40px;
+    background:#22c55e;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+    transition:0.3s;
+    font-size:18px;
+}
+
+.btn:hover{
+    background:#16a34a;
+    transform:scale(1.1);
+}
+</style>
+</head>
+
+<body>
+
+<div class="player">
+    <div class="album"></div>
+
+    <div class="title">Perfect</div>
+    <div class="singer">Ed Sheeran</div>
+
+    <div class="bar"><span></span></div>
+
+    <div class="buttons">
+        <div class="btn">⏮</div>
+        <div class="btn">▶</div>
+        <div class="btn">⏭</div>
+    </div>
+</div>
+
+</body>
+</html>
